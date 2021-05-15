@@ -1,6 +1,7 @@
 package com.android.tvmaze.shows
 
 import androidx.paging.PagingSource
+import androidx.paging.PagingState
 import com.android.tvmaze.network.TvMazeApi
 import com.android.tvmaze.network.home.Show
 import retrofit2.HttpException
@@ -28,5 +29,9 @@ constructor(private val tvMazeApi: TvMazeApi) : PagingSource<Int, Show>() {
         } catch (exception: HttpException) {
             LoadResult.Error(exception)
         }
+    }
+
+    override fun getRefreshKey(state: PagingState<Int, Show>): Int? {
+        return null
     }
 }

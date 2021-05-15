@@ -1,12 +1,12 @@
 object Deps {
     object Versions {
-        const val compile_sdk = 28
+        const val compile_sdk = 29
         const val min_sdk = 21
         const val target_sdk = 26
         const val app_version_code = 104
         const val app_version_name = "2.1.0"
-        const val android_plugin = "4.1.1"
-        const val constraint_layout = "2.0.0-beta4"
+        const val android_plugin = "4.2.0"
+        const val constraint_layout = "2.0.4"
         const val lifecycle = "2.2.0"
         const val android_test = "1.2.0"
         const val espresso = "3.2.0"
@@ -15,7 +15,7 @@ object Deps {
         const val mockito = "3.2.4"
         const val okhttp = "4.8.0"
         const val retrofit = "2.9.0"
-        const val paging = "3.0.0-alpha10"
+        const val paging = "3.0.0-rc01"
         const val room = "2.2.5"
         const val kotlin = "1.4.21"
         const val timber = "4.7.1"
